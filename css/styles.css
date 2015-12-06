@@ -1,0 +1,253 @@
+body {
+    background: #2d3139;
+    margin: 0;
+}
+#app-container {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.app-nav-list {
+    background: #000;
+    color: #fff;
+    font-size: 21px;
+    line-height: 47px;
+}
+
+#app-nav {
+    color: #fff;
+}
+
+#app-nav a {
+    color: #E4CD19;
+}
+
+#app-nav .description {
+    font-size: 12px;
+    color: #8C8C8C;
+    padding: 36px;
+}
+
+#app-nav a {
+    text-decoration: none;
+}
+
+#app-nav .app-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-title {
+    padding: 20px 20px;
+    text-align: center;
+    background: #0E0E0E;
+    margin: 0 0 30px 0;
+}
+
+.app-nav-list li {
+    display: inline-block;
+}
+
+    .app-nav-list a {
+        color: #E4CD19;
+        display: block;
+        padding: 0 40px;
+        text-transform: uppercase;
+        /* font-weight: bold; */
+    }
+
+#app-nav a:hover {
+    background: #121212;
+}
+
+#page-container {
+}
+
+    #page-container .list-container {
+        background: #1E2025;
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+#page-container .list-container .next-btn {
+    margin-left: 12px;
+    background: #3c3c3c;
+    color: #fff;
+    border: none;
+    padding: 9px;
+}
+
+.list-title {
+    background: #887200;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 20px;
+    display: none;
+}
+
+#page-container .list-container .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container .list-container .list a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 18px;
+    border-top: solid 1px #3C3C3C;
+    border-bottom: solid 2px #151515;
+    /* box-shadow: inset 0px 7px 27px -4px rgba(255,255,255,0.15); */
+}
+
+#page-container .list-container .list a:hover {
+    background: #4E4E4E;
+}
+
+#page-container .list-container a {
+}
+
+    #page-container .detail-container {
+        background: #2d3139;
+        color: #DEDEDE;
+        position: fixed;
+        top:15px;
+        left:15px;
+        right:15px;
+        bottom:15px;
+        box-shadow:0px 0px 12px;
+        display:none;
+    }
+
+.detail-container .detail {
+    margin: 45px;
+}
+
+.detail {}
+
+.detail dl {}
+
+.detail dt {
+    text-transform: capitalize;
+    border-bottom: solid 1px #4C4C4C;
+    margin-bottom: 12px;
+    padding-bottom: 9px;
+    color: #B9B9B9;
+}
+
+.detail dd {
+    margin: 0;
+    margin-bottom: 41px;
+}
+
+.detail .card {
+    background: #524900;
+    margin: 6px;
+    display: inline-block;
+    padding: 9px;
+    border-radius: 4px;
+    border-top: solid 1px #9E9048;
+}
+
+.detail .card-loading {
+    color: #AF7A00;
+}
+
+.detail .card:hover {
+    background: #A27900;
+}
+
+.detail .card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.detail a {
+    color: yellow;
+}
+
+    #page-container .loader {
+        position: fixed;
+        background: rgba(162, 144, 0,0.5);
+        top:0;
+        left:0;
+        right: 0;
+        padding: 9px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #page-container .detail-container.show {
+        display:block;
+    }
+
+.detail-close {
+    background: #967700;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 900px) { 
+#app-nav {
+    width: 250px;
+    float:left;
+}
+
+#app-nav ul {
+    margin-top: 15px;
+}
+
+#app-nav:before {
+    content: '';
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    bottom: 0;
+    z-index: -1;
+}
+
+    #app-nav a {
+    }
+
+.app-nav-list li {
+    display: block;
+    text-align: center;
+}
+
+#page-container {
+    margin-left: 250px;
+}
+
+    #page-container .list-container {
+        width: 300px;
+        float:left;
+        height: 300px;
+        overflow: auto;
+    }
+
+    #page-container .detail-container {
+        margin-left: 300px;
+        height: 300px;
+        overflow: auto;
+        position:static;
+        box-shadow: inset 16px 0px 18px rgba(0,0,0,0.5);
+        display: block;
+    }
+
+.detail-close {
+    display: none;
+}
+
+    #page-container .loader {
+    }
+
+}    
